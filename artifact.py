@@ -126,7 +126,6 @@ if artifact_1_sub == 3:
     artifact_1_sub_1 = random.randint(0, 9)  # サブステータス1の種類
     while artifact_1_sub_1 == artifact_1_main: # メインステータスと同じサブステータスは出ない
         artifact_1_sub_1 = random.randint(0, 9)
-    
     if artifact_1_sub_1 == 0:
         artifact_1_sub_1_value = random.choice([14, 16, 18, 19])  # 攻撃実数
     elif artifact_1_sub_1 == 1:
@@ -149,9 +148,8 @@ if artifact_1_sub == 3:
         artifact_1_sub_1_value = random.choice([5.1, 5.8, 6.6, 7.3])  # 防御％
 
     artifact_1_sub_2 = random.randint(0, 9)  # サブステータス2の種類
-    while artifact_1_sub_2 == artifact_1_main or artifact_1_sub_2 == artifact_1_sub_1: # メインステータスと同じサブステータスは出ない
+    while artifact_1_sub_2 == artifact_1_main or artifact_1_sub_2 == artifact_1_sub_1: # 既に出たステータスと同じサブステータスは出ない
         artifact_1_sub_2 = random.randint(0, 9)
-
     if artifact_1_sub_2 == 0:
         artifact_1_sub_2_value = random.choice([14, 16, 18, 19])  # 攻撃実数
     elif artifact_1_sub_2 == 1:
@@ -172,3 +170,123 @@ if artifact_1_sub == 3:
         artifact_1_sub_2_value = random.choice([4.1, 4.7, 5.3, 5.8]) # 攻撃％
     elif artifact_1_sub_2 == 9:
         artifact_1_sub_2_value = random.choice([5.1, 5.8, 6.6, 7.3])  # 防御％
+
+    artifact_1_sub_3 = random.randint(0, 9)  # サブステータス3の種類
+    while artifact_1_sub_3 == artifact_1_main or artifact_1_sub_3 == artifact_1_sub_1 or artifact_1_sub_3 == artifact_1_sub_2: # 既に出たステータスと同じサブステータスは出ない
+        artifact_1_sub_3 = random.randint(0, 9)
+    if artifact_1_sub_3 == 0:
+        artifact_1_sub_3_value = random.choice([14, 16, 18, 19])  # 攻撃実数
+    elif artifact_1_sub_3 == 1:
+        artifact_1_sub_3_value = random.choice([16, 19, 21, 23]) # 防御実数
+    elif artifact_1_sub_3 == 2:
+        artifact_1_sub_3_value = random.choice([16, 19, 21, 23]) # 熟知
+    elif artifact_1_sub_3 == 3:
+        artifact_1_sub_3_value = random.choice([209, 239, 269, 299])  # HP実数
+    elif artifact_1_sub_3 == 4:
+        artifact_1_sub_3_value = random.choice([2.7, 3.1, 3.5, 3.9])  # 会心率
+    elif artifact_1_sub_3 == 5:
+        artifact_1_sub_3_value = random.choice([5.4, 6.2, 7.0, 7.8]) # 会心ダメージ
+    elif artifact_1_sub_3 == 6:
+        artifact_1_sub_3_value = random.choice([4.5, 5.2, 5.8, 6.5]) # 元素チャージ効率
+    elif artifact_1_sub_3 == 7:
+        artifact_1_sub_3_value = random.choice([4.1, 4.7, 5.3, 5.8])  # HP%
+    elif artifact_1_sub_3 == 8:
+        artifact_1_sub_3_value = random.choice([4.1, 4.7, 5.3, 5.8]) # 攻撃％
+    elif artifact_1_sub_3 == 9:
+        artifact_1_sub_3_value = random.choice([5.1, 5.8, 6.6, 7.3])  # 防御％
+
+elif artifact_1_sub == 4:
+    artifact_1_sub_1 = random.randint(0, 9)  # サブステータス1の種類
+    while artifact_1_sub_1 == artifact_1_main: # メインステータスと同じサブステータスは出ない
+        artifact_1_sub_1 = random.randint(0, 9)
+    if artifact_1_sub_1 == 0:
+        artifact_1_sub_1_value = random.choice([14, 16, 18, 19])  # 攻撃実数
+    elif artifact_1_sub_1 == 1:
+        artifact_1_sub_1_value = random.choice([16, 19, 21, 23]) # 防御実数
+    elif artifact_1_sub_1 == 2:
+        artifact_1_sub_1_value = random.choice([16, 19, 21, 23]) # 熟知
+    elif artifact_1_sub_1 == 3:
+        artifact_1_sub_1_value = random.choice([209, 239, 269, 299])  # HP実数
+    elif artifact_1_sub_1 == 4:
+        artifact_1_sub_1_value = random.choice([2.7, 3.1, 3.5, 3.9])  # 会心率
+    elif artifact_1_sub_1 == 5:
+        artifact_1_sub_1_value = random.choice([5.4, 6.2, 7.0, 7.8]) # 会心ダメージ
+    elif artifact_1_sub_1 == 6:
+        artifact_1_sub_1_value = random.choice([4.5, 5.2, 5.8, 6.5]) # 元素チャージ効率
+    elif artifact_1_sub_1 == 7:
+        artifact_1_sub_1_value = random.choice([4.1, 4.7, 5.3, 5.8])  # HP%
+    elif artifact_1_sub_1 == 8:
+        artifact_1_sub_1_value = random.choice([4.1, 4.7, 5.3, 5.8]) # 攻撃％
+    elif artifact_1_sub_1 == 9:
+        artifact_1_sub_1_value = random.choice([5.1, 5.8, 6.6, 7.3])  # 防御％
+
+    artifact_1_sub_2 = random.randint(0, 9)  # サブステータス2の種類
+    while artifact_1_sub_2 == artifact_1_main or artifact_1_sub_2 == artifact_1_sub_1: # 既に出たステータスと同じサブステータスは出ない
+        artifact_1_sub_2 = random.randint(0, 9)
+    if artifact_1_sub_2 == 0:
+        artifact_1_sub_2_value = random.choice([14, 16, 18, 19])  # 攻撃実数
+    elif artifact_1_sub_2 == 1:
+        artifact_1_sub_2_value = random.choice([16, 19, 21, 23]) # 防御実数
+    elif artifact_1_sub_2 == 2:
+        artifact_1_sub_2_value = random.choice([16, 19, 21, 23]) # 熟知
+    elif artifact_1_sub_2 == 3:
+        artifact_1_sub_2_value = random.choice([209, 239, 269, 299])  # HP実数
+    elif artifact_1_sub_2 == 4:
+        artifact_1_sub_2_value = random.choice([2.7, 3.1, 3.5, 3.9])  # 会心率
+    elif artifact_1_sub_2 == 5:
+        artifact_1_sub_2_value = random.choice([5.4, 6.2, 7.0, 7.8]) # 会心ダメージ
+    elif artifact_1_sub_2 == 6:
+        artifact_1_sub_2_value = random.choice([4.5, 5.2, 5.8, 6.5]) # 元素チャージ効率
+    elif artifact_1_sub_2 == 7:
+        artifact_1_sub_2_value = random.choice([4.1, 4.7, 5.3, 5.8])  # HP%
+    elif artifact_1_sub_2 == 8:
+        artifact_1_sub_2_value = random.choice([4.1, 4.7, 5.3, 5.8]) # 攻撃％
+    elif artifact_1_sub_2 == 9:
+        artifact_1_sub_2_value = random.choice([5.1, 5.8, 6.6, 7.3])  # 防御％
+
+    artifact_1_sub_3 = random.randint(0, 9)  # サブステータス3の種類
+    while artifact_1_sub_3 == artifact_1_main or artifact_1_sub_3 == artifact_1_sub_1 or artifact_1_sub_3 == artifact_1_sub_2: # 既に出たステータスと同じサブステータスは出ない
+        artifact_1_sub_3 = random.randint(0, 9)
+    if artifact_1_sub_3 == 0:
+        artifact_1_sub_3_value = random.choice([14, 16, 18, 19])  # 攻撃実数
+    elif artifact_1_sub_3 == 1:
+        artifact_1_sub_3_value = random.choice([16, 19, 21, 23]) # 防御実数
+    elif artifact_1_sub_3 == 2:
+        artifact_1_sub_3_value = random.choice([16, 19, 21, 23]) # 熟知
+    elif artifact_1_sub_3 == 3:
+        artifact_1_sub_3_value = random.choice([209, 239, 269, 299])  # HP実数
+    elif artifact_1_sub_3 == 4:
+        artifact_1_sub_3_value = random.choice([2.7, 3.1, 3.5, 3.9])  # 会心率
+    elif artifact_1_sub_3 == 5:
+        artifact_1_sub_3_value = random.choice([5.4, 6.2, 7.0, 7.8]) # 会心ダメージ
+    elif artifact_1_sub_3 == 6:
+        artifact_1_sub_3_value = random.choice([4.5, 5.2, 5.8, 6.5]) # 元素チャージ効率
+    elif artifact_1_sub_3 == 7:
+        artifact_1_sub_3_value = random.choice([4.1, 4.7, 5.3, 5.8])  # HP%
+    elif artifact_1_sub_3 == 8:
+        artifact_1_sub_3_value = random.choice([4.1, 4.7, 5.3, 5.8]) # 攻撃％
+    elif artifact_1_sub_3 == 9:
+        artifact_1_sub_3_value = random.choice([5.1, 5.8, 6.6, 7.3])  # 防御％
+    artifact_1_sub_4 = random.randint(0, 9)  # サブステータス4の種類
+    while artifact_1_sub_4 == artifact_1_main or artifact_1_sub_4 == artifact_1_sub_1 or artifact_1_sub_4 == artifact_1_sub_2 or artifact_1_sub_4 == artifact_1_sub_3: # 既に出たステータスと同じサブステータスは出ない
+        artifact_1_sub_4 = random.randint(0, 9)
+    if artifact_1_sub_4 == 0:
+        artifact_1_sub_4_value = random.choice([14, 16, 18, 19])  # 攻撃実数
+    elif artifact_1_sub_4 == 1:
+        artifact_1_sub_4_value = random.choice([16, 19, 21, 23]) # 防御実数
+    elif artifact_1_sub_4 == 2:
+        artifact_1_sub_4_value = random.choice([16, 19, 21, 23]) # 熟知
+    elif artifact_1_sub_4 == 3:
+        artifact_1_sub_4_value = random.choice([209, 239, 269, 299])  # HP実数
+    elif artifact_1_sub_4 == 4:
+        artifact_1_sub_4_value = random.choice([2.7, 3.1, 3.5, 3.9])  # 会心率
+    elif artifact_1_sub_4 == 5:
+        artifact_1_sub_4_value = random.choice([5.4, 6.2, 7.0, 7.8]) # 会心ダメージ
+    elif artifact_1_sub_4 == 6:
+        artifact_1_sub_4_value = random.choice([4.5, 5.2, 5.8, 6.5]) # 元素チャージ効率
+    elif artifact_1_sub_4 == 7:
+        artifact_1_sub_4_value = random.choice([4.1, 4.7, 5.3, 5.8])  # HP%
+    elif artifact_1_sub_4 == 8:
+        artifact_1_sub_4_value = random.choice([4.1, 4.7, 5.3, 5.8]) # 攻撃％
+    elif artifact_1_sub_4 == 9:
+        artifact_1_sub_4_value = random.choice([5.1, 5.8, 6.6, 7.3])  # 防御％
