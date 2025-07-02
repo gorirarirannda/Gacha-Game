@@ -99,6 +99,6 @@ class Artifact:
 
 # 使用例
 parts = ["flower", "feather", "sand", "goblet", "circlet"]
-artifacts = [Artifact(random.choice(parts)) for _ in range(random.choices([1, 2], weights=[65, 35])[0])]
+artifacts = [Artifact(random.choice(parts))]
 for a in artifacts:
     print(a)
