@@ -102,3 +102,6 @@ parts = ["flower", "feather", "sand", "goblet", "circlet"]
 artifacts = [Artifact(random.choice(parts))]
 for a in artifacts:
     print(a)
+
+wait = input("Press Enter to exit...")
+# This will keep the console open until you press Enter.    
