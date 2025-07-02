@@ -124,10 +124,11 @@ class Artifact:
         return result
 
 # 使用例
-parts = ["flower", "feather", "sand", "goblet", "circlet"]
+'''parts = ["flower", "feather", "sand", "goblet", "circlet"]
 artifacts = [Artifact(random.choice(parts))]
 for a in artifacts:
     print(a)
+'''
 
 if __name__ == "__main__":
     parts = ["flower", "feather", "sand", "goblet", "circlet"]
@@ -139,5 +140,6 @@ if __name__ == "__main__":
 
         again = input("もう一度生成しますか？（y/n）: ").lower()
         if again != "y":
-            print("終了します。")
+            wait = input("Press Enter to exit...")
             break
+
