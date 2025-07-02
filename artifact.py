@@ -129,5 +129,15 @@ artifacts = [Artifact(random.choice(parts))]
 for a in artifacts:
     print(a)
 
-wait = input("Press Enter to exit...")
-# This will keep the console open until you press Enter.    
+if __name__ == "__main__":
+    parts = ["flower", "feather", "sand", "goblet", "circlet"]
+
+    while True:
+        print("----- 聖遺物生成 -----")
+        artifact = Artifact(random.choice(parts))
+        print(artifact)
+
+        again = input("もう一度生成しますか？（y/n）: ").lower()
+        if again != "y":
+            print("終了します。")
+            break
