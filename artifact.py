@@ -92,9 +92,35 @@ class Artifact:
         return values.get(stat, 0)
 
     def __str__(self):
-        result = f"{self.part_name} - メイン: {self.main_stat[0]} {self.main_stat[1]}\n"
+        # 英語 → 日本語の部位変換表
+        part_names = {
+            "flower": "生の花",
+            "feather": "死の羽",
+            "sand": "時の砂",
+            "goblet": "空の杯",
+            "circlet": "理の冠"
+        }
+
+        # 「%」が必要なステータス名
+        percent_stats = {
+            "HP%", "攻撃%", "防御%", "会心率", "会心ダメ", "元素チャージ効率", "風元素ダメ", "岩元素ダメ",
+            "雷元素ダメ", "草元素ダメ", "水元素ダメ", "炎元素ダメ", "氷元素ダメ", "物理ダメ", "治癒効果"
+        }
+
+        # メインステータス
+        main_stat_name, main_stat_value = self.main_stat
+        if main_stat_name in percent_stats:
+            main_stat_value_str = f"{main_stat_value}%"
+        else:
+            main_stat_value_str = str(main_stat_value)
+
+        result = f"{part_names.get(self.part_name, self.part_name)} - メイン: {main_stat_name} {main_stat_value_str}\n"
+
+        # サブステータス
         for stat, val in self.sub_stats:
-            result += f"  サブ: {stat} {val}\n"
+            val_str = f"{val}%" if stat in percent_stats else str(val)
+            result += f"  サブ: {stat} {val_str}\n"
+
         return result
 
 # 使用例
